@@ -1,0 +1,75 @@
+    <form>
+        <input type="number" placeholder="update Id" name="id">   
+        <input type="text" placeholder="camper" name="camper">
+        <input type="text" placeholder="age"  name="age">
+        <input type="text" placeholder="roadMap" name="roadMap">
+        <input type="submit" value="GET Info" name="getData">
+        <input type="submit" value="POST info" name="postData">
+        <input type="submit" id="change" value="PUT info" name="putData">
+    </form>
+    <select>
+        <option value="UPDATE">UPDATE</option>
+        <option value="DELETE">DELETE</option>
+    </select>
+
+<style> 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+    select {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'DM Sans', sans-serif;
+        background: rgba(2, 0, 36, 0.322);
+        color: #dfdfdf; 
+        padding: 0.3em;
+        outline: none;
+    }
+
+    select option{
+        transition: 300ms ease;
+        color: #4c4a4a
+    }
+    input[type="number"] {
+        display: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 2em auto;
+        gap: 1rem;
+        transition: all ease 1s;
+    }
+
+    form input{
+        padding: 1em;
+        font-family: 'DM Sans', sans-serif;
+        outline: none;
+        border: none;
+        border-radius: 1rem;
+    }
+
+    form input[type="submit"] {
+        background: #000;
+        color: #fff;
+        outline: none;
+        border: none;
+        transition: 300ms ease;
+        cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+        color: #000;
+        background: transparent;
+    }
+
+    input[type="submit"].disable {
+        opacity: 0.5;
+        transition: none;
+    }
+    input[type="submit"].disable:hover{
+        background: #4c4a4a;
+        color: #fff
+    }
+</style>

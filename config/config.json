@@ -1,0 +1,16 @@
+{
+  "campers": [
+    {
+      "id": 1,
+      "camper": "Miller",
+      "age": "151",
+      "roadMap": "backend"
+    },
+    {
+      "id": 2,
+      "camper": "Galvis",
+      "age": "54",
+      "roadMap": "adasd"
+    }
+  ]
+}
