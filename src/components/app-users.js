@@ -54,7 +54,11 @@ export default class USERS extends HTMLElement {
         let ws = new Worker('src/workers/ws.js', {type:'module'});
         let data = Object.fromEntries(new FormData(e.target));
         let idf = this.number.style.display != 'none' ? this.number.value : false
-        ws.postMessage({whatFunction: e.submitter.name, argument: [data, !idf ? null : idf], })
+        console.log(e.submitter.dataset)
+        ws.postMessage({whatFunction: e.submitter.name, argument: [data, !idf ? null : idf]})
+        ws.addEventListener('message', e => {
+
+        })
     }
 }
 
